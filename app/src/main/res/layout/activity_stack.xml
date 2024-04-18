@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    Header-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/blue"
+        android:elevation="4dp">
+
+        <!--        Header Title-->
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppinsbold"
+            android:text="@string/headerTitle"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--        Header Dropdown Menu-->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dropdown_menu_icon"
+            android:entries="@array/options_array" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--    Scrollable-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--            Title-->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/stackTitle"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <!--            Description-->
+            <TextView
+                android:id="@+id/subtitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/stackDescription"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!--            Explanatory Gif-->
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="match_parent"
+                android:layout_height="499dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="0dp"
+                android:src="@drawable/stack_operations" />
+
+            <!--            Divider-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--SubTitle for Operations of Stack-->
+            <TextView
+                android:id="@+id/titleText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="20dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/stackSecondTitle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <!--            List for the Stack Operations-->
+            <ListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:entries="@array/stackListView" />
+
+            <!--            Divider-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--            SubTitle for Java Implementation-->
+            <TextView
+                android:id="@+id/titleText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="40dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/stackThirdTitle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <!--            WebView to display the code implementation-->
+            <WebView
+                android:id="@+id/codeWebView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!--            Divider-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--            SubTitle for Time Complexity-->
+            <TextView
+                android:id="@+id/titleText4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="40dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/stackFourthTitle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <!--            ListView for the Time Complexity-->
+            <ListView
+                android:id="@+id/list_view2"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:entries="@array/stackListView" />
+
+            <!--            Divider-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <!--            SubTitle for Extra Resources-->
+            <TextView
+                android:id="@+id/titleText5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="40dp"
+                android:fontFamily="@font/poppinslight"
+                android:text="@string/stackFifthTitle"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <!--            Buttons for Intents-->
+            <Button
+                android:id="@+id/documentationButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_corners_blue"
+                android:text="@string/stackImplementationButton" />
+
+            <Button
+                android:id="@+id/youtubeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_corners_blue"
+                android:text="@string/stackYoutubeButton" />
+
+            <Button
+                android:id="@+id/geekForGeeksTutorialButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_corners_blue"
+                android:text="@string/stackGeekButton" />
+
+            <Button
+                android:id="@+id/downloadCodeButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/rounded_corners_blue"
+                android:text="@string/stackDownloadButton" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

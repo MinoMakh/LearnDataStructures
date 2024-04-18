@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_stack"
+        android:title="Stack" />
+    <item
+        android:id="@+id/menu_queue"
+        android:title="Queue" />
+    <item
+        android:id="@+id/menu_tree"
+        android:title="Tree" />
+    <item
+        android:id="@+id/menu_linked_list"
+        android:title="LinkedList" />
+    <item
+        android:id="@+id/menu_array"
+        android:title="Array" />
+    <item
+        android:id="@+id/menu_hashmap"
+        android:title="HashMap" />
+</menu>

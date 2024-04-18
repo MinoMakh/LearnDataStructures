@@ -1,0 +1,237 @@
+<resources>
+    <string name="app_name">DataStructures</string>
+    <string name="headerTitle">Data Structures</string>
+
+    <!--    Items for the dropdown menu array-->
+    <string-array name="options_array">
+        <item>Main</item>
+        <item>Stack</item>
+        <item>Queue</item>
+        <item>Tree</item>
+        <item>LinkedList</item>
+        <item>Array</item>
+        <item>HashMap</item>
+    </string-array>
+
+    <!--    Main Activity Strings-->
+    <string name="mainTitle">Ready to Learn?</string>
+    <string name="mainDescription">Check out all our courses for the different types of data structures.</string>
+
+    <!--    Stack Activity Strings-->
+    <string-array name="stackListView">
+        <item>Push</item>
+        <item>Pop</item>
+        <item>Peek</item>
+        <item>IsEmpty</item>
+        <item>IsFull</item>
+    </string-array>
+
+    <string-array name="stackDescriptions">
+        <item>Adds an element to the top of the stack.</item>
+        <item>Removes the top element from the stack.</item>
+        <item>Returns the top element without removing it.</item>
+        <item>Checks if the stack is empty.</item>
+        <item>Checks if the stack is full (in case of fixed-size arrays).</item>
+    </string-array>
+
+    <string-array name="stackTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant) (in case of fixed-size arrays).</item>
+    </string-array>
+
+    <string name="stackDescription">A stack is a fundamental data structure that follows the Last In, First Out (LIFO) principle. In a stack, elements are added and removed from the top, resembling a stack of objects. </string>
+    <string name="stackTitle">Stack</string>
+    <string name="stackSecondTitle">Operations of Stack</string>
+    <string name="stackThirdTitle">Java Implementation</string>
+    <string name="stackFourthTitle">Time Complexity</string>
+    <string name="stackFifthTitle">Extra Resources</string>
+    <string name="stackImplementationButton">Java Stack Documentation</string>
+    <string name="stackYoutubeButton">Youtube Stack Tutorial</string>
+    <string name="stackGeekButton">GeekForGeeks Tutorial</string>
+    <string name="stackDownloadButton">Download Stack PDF</string>
+
+    <!--    Queue Activity Strings-->
+    <string-array name="queueListView">
+        <item>Enqueue</item>
+        <item>Dequeue </item>
+        <item>Peek</item>
+        <item>IsEmpty</item>
+        <item>IsFull</item>
+    </string-array>
+
+    <string-array name="queueDescriptions">
+        <item>Adds an element to the rear of the queue.</item>
+        <item>Removes and returns the element from the front of the queue.</item>
+        <item>Returns the rear element without removing it.</item>
+        <item>Checks if the queue is empty.</item>
+        <item>Checks if the queue is full.</item>
+    </string-array>
+
+    <string-array name="queueTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+    </string-array>
+
+    <string name="queueDescription">A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. It operates like a line where elements are added at one end (rear) and removed from the other end (front).</string>
+    <string name="queueTitle">Queue</string>
+    <string name="queueSecondTitle">Operations of Queue</string>
+    <string name="queueThirdTitle">Java Implementation</string>
+    <string name="queueFourthTitle">Time Complexity</string>
+    <string name="queueFifthTitle">Extra Resources</string>
+    <string name="queueImplementationButton">Java Queue Documentation</string>
+    <string name="queueYoutubeButton">Youtube Queue Tutorial</string>
+    <string name="queueGeekButton">GeekForGeeks Tutorial</string>
+    <string name="queueDownloadButton">Download Queue PDF</string>
+
+    <!--    Tree Activity Strings-->
+    <string-array name="treeListView">
+        <item>Create</item>
+        <item>Insert</item>
+        <item>Search</item>
+        <item>Preorder Traversal</item>
+        <item>In order Traversal</item>
+        <item>Post-order Traversal</item>
+    </string-array>
+
+    <string-array name="treeDescriptions">
+        <item>Create a tree in the data structure.</item>
+        <item>Inserts data in a tree.</item>
+        <item>Searches specific data in a tree to check whether it is present or not.</item>
+        <item>Perform Traveling a tree in a pre-order manner in the data structure.</item>
+        <item>Perform Traveling a tree in an in-order manner.</item>
+        <item>Perform Traveling a tree in a post-order manner.</item>
+    </string-array>
+
+    <string-array name="treeTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(log n) - Assuming the tree is balanced. O(n) - If the tree degenerates into a linked list.</item>
+        <item>O(log n) - Assuming the tree is balanced. O(n) - If the tree degenerates into a linked list.</item>
+        <item> O(n)</item>
+        <item> O(n)</item>
+        <item> O(n)</item>
+    </string-array>
+
+    <string name="treeDescription">A tree data structure is a hierarchical structure that is used to represent and organize data in a way that is easy to navigate and search. It is a collection of nodes that are connected by edges and has a hierarchical relationship between the nodes. The topmost node of the tree is called the root, and the nodes below it are called the child nodes. Each node can have multiple child nodes, and these child nodes can also have their own child nodes, forming a recursive structure.</string>
+    <string name="treeTitle">Tree</string>
+    <string name="treeSecondTitle">Operations of Tree</string>
+    <string name="treeThirdTitle">Java Implementation</string>
+    <string name="treeFourthTitle">Time Complexity</string>
+    <string name="treeFifthTitle">Extra Resources</string>
+    <string name="treeImplementationButton">Java Tree Documentation</string>
+    <string name="treeYoutubeButton">Youtube Tree Tutorial</string>
+    <string name="treeGeekButton">GeekForGeeks Tutorial</string>
+    <string name="treeDownloadButton">Download Tree PDF</string>
+
+    <!--    LinkedList Activity Strings-->
+    <string-array name="linkedListView">
+        <item>Insertion</item>
+        <item>Deletion</item>
+        <item>Search</item>
+        <item>Traversal</item>
+        <item>Sort</item>
+    </string-array>
+
+    <string-array name="linkedDescriptions">
+        <item>Inserts a new node to the list.</item>
+        <item>Remove an existing node from the list.</item>
+        <item>Find a node in the list.</item>
+        <item>Access each element of the linked list.</item>
+        <item>Sort the nodes.</item>
+    </string-array>
+
+    <string-array name="linkedTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(n)</item>
+        <item>O(n)</item>
+        <item>O(n)</item>
+        <item>O(n log n)</item>
+    </string-array>
+
+    <string name="linkedDescription">A linked list is a fundamental data structure in computer science. It consists of nodes where each node contains data and a reference (link) to the next node in the sequence. This allows for dynamic memory allocation and efficient insertion and deletion operations compared to arrays.</string>
+    <string name="linkedTitle">LinkedList</string>
+    <string name="linkedSecondTitle">Operations of LinkedList</string>
+    <string name="linkedThirdTitle">Java Implementation</string>
+    <string name="linkedFourthTitle">Time Complexity</string>
+    <string name="linkedFifthTitle">Extra Resources</string>
+    <string name="linkedImplementationButton">Java LinkedList Documentation</string>
+    <string name="linkedYoutubeButton">Youtube LinkedList Tutorial</string>
+    <string name="linkedGeekButton">GeekForGeeks Tutorial</string>
+    <string name="linkedDownloadButton">Download LinkedList PDF</string>
+
+    <!--    Array Activity Strings-->
+    <string-array name="arrayListView">
+        <item>Insertion</item>
+        <item>Deletion</item>
+        <item>Search</item>
+        <item>Traversal</item>
+        <item>Sort</item>
+    </string-array>
+
+    <string-array name="arrayDescriptions">
+        <item>Adding a new element to an array at a specific index.</item>
+        <item>Removing an element from an array at a specific index.</item>
+        <item>Finding the index of an element in an array.</item>
+        <item>Visiting each element of an array in a specific order (e.g., sequential, reverse).</item>
+        <item>Sort the elements inside the array.</item>
+    </string-array>
+
+    <string-array name="arrayTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(n)</item>
+        <item>O(n)</item>
+        <item>O(n log n)</item>
+    </string-array>
+
+    <string name="arrayDescription">An array data structure is a fundamental concept in computer science that stores a collection of elements in a contiguous block of memory. It allows for efficient access to elements using indices and is widely used in programming for organizing and manipulating data.</string>
+    <string name="arrayTitle">Array</string>
+    <string name="arraySecondTitle">Operations of Arrays</string>
+    <string name="arrayThirdTitle">Java Implementation</string>
+    <string name="arrayFourthTitle">Time Complexity</string>
+    <string name="arrayFifthTitle">Extra Resources</string>
+    <string name="arrayImplementationButton">Java Array Documentation</string>
+    <string name="arrayYoutubeButton">Youtube Array Tutorial</string>
+    <string name="arrayGeekButton">GeekForGeeks Tutorial</string>
+    <string name="arrayDownloadButton">Download Array PDF</string>
+
+    <!--    HashMap Activity Strings-->
+    <string-array name="hashListView">
+        <item>Insertion</item>
+        <item>Deletion</item>
+        <item>Search</item>
+        <item>Traversal</item>
+    </string-array>
+
+    <string-array name="hashDescriptions">
+        <item>Adding a key-value pair into the HashMap.</item>
+        <item>Removing a key-value pair from the HashMap based on the given key.</item>
+        <item>Looking for a specific key in the HashMap to retrieve its associated value.</item>
+        <item>Iterating over all key-value pairs in the HashMap.</item>
+    </string-array>
+
+    <string-array name="hashTimeComplexity">
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(1) (Constant)</item>
+        <item>O(n)</item>
+    </string-array>
+
+    <string name="hashDescription">A HashMap is a data structure that stores key-value pairs, allowing efficient retrieval of values based on their corresponding keys. It uses a technique called hashing to map keys to indexes in an array, providing fast access to values without needing to search through the entire collection.</string>
+    <string name="hashTitle">HashMap</string>
+    <string name="hashSecondTitle">Operations of HashMap</string>
+    <string name="hashThirdTitle">Java Implementation</string>
+    <string name="hashFourthTitle">Time Complexity</string>
+    <string name="hashFifthTitle">Extra Resources</string>
+    <string name="hashImplementationButton">Java HashMap Documentation</string>
+    <string name="hashYoutubeButton">Youtube HashMap Tutorial</string>
+    <string name="hashGeekButton">GeekForGeeks Tutorial</string>
+    <string name="hashDownloadButton">Download HashMap PDF</string>
+
+
+</resources>
